@@ -1,0 +1,64 @@
+# .pre-commit-config.yaml — Standard pre-commit hook configuration
+# Install: uv run pre-commit install
+# Run manually: uv run pre-commit run --all-files
+
+default_language_version:
+  python: python3.12
+
+repos:
+  # ── General file hygiene ──────────────────────────────────────────────────
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+        args: [--unsafe]           # allows YAML with custom tags (e.g. !reference in GitLab CI)
+      - id: check-toml
+      - id: check-json
+      - id: check-merge-conflict
+      - id: check-added-large-files
+        args: [--maxkb=500]
+      - id: detect-private-key     # blocks accidental secret commits
+      - id: no-commit-to-branch
+        args: [--branch, main]     # forces all changes through PRs
+
+  # ── YAML linting ─────────────────────────────────────────────────────────
+  - repo: https://github.com/adrienverge/yamllint
+    rev: v1.35.1
+    hooks:
+      - id: yamllint
+        args: [--config-file, .yamllint.yaml]
+        exclude: ^templates/       # template files may intentionally break rules
+
+  # ── Python: ruff (lint + format) ─────────────────────────────────────────
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.6.9
+    hooks:
+      - id: ruff
+        args: [--fix, --exit-non-zero-on-fix]
+      - id: ruff-format
+
+  # ── Python: mypy ─────────────────────────────────────────────────────────
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.11.2
+    hooks:
+      - id: mypy
+        additional_dependencies:
+          - pydantic>=2.0.0
+          - structlog>=24.0.0
+        args: [--config-file, pyproject.toml]
+
+  # ── GitHub Actions validation ─────────────────────────────────────────────
+  - repo: https://github.com/rhysd/actionlint
+    rev: v1.7.3
+    hooks:
+      - id: actionlint
+
+  # ── Commit message linting ────────────────────────────────────────────────
+  - repo: https://github.com/compilerla/conventional-pre-commit
+    rev: v3.4.0
+    hooks:
+      - id: conventional-pre-commit
+        stages: [commit-msg]
+        args: [feat, fix, refactor, perf, test, docs, chore, ci]

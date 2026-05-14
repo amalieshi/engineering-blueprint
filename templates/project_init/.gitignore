@@ -1,0 +1,209 @@
+# ============================================================
+# Python
+# ============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.venv/
+venv/
+ENV/
+env/
+.env
+env.bak/
+venv.bak/
+
+# uv
+uv.lock                        # Commit this — remove this line to track it
+.python-version
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# ruff
+.ruff_cache/
+
+# pytest
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+
+# Jupyter
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# ============================================================
+# C# / .NET
+# ============================================================
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+*.pidb
+*.svd
+*.userprefs
+.vs/
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+*.UpgradeLog.XML
+*.UpgradeLog.htm
+ServiceFabricBackup/
+*.bak
+*.user
+*.dbmdl
+*.dbproj.schemaview
+*.jfm
+*.pfx
+*.publishsettings
+orleans.codegen.cs
+PublishScripts/
+*.nupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+*.nuget.props
+*.nuget.targets
+project.lock.json
+project.fragment.lock.json
+artifacts/
+ScaffoldingReadMe.txt
+StyleCopReport.xml
+*_i.c
+*_p.c
+*_h.h
+*.ilk
+*.meta
+*.obj
+*.iobj
+*.pch
+*.pdb
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*_wpftmp.csproj
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+_Chutzpah*
+*.VC.db
+*.VC.VC.opendb
+*.docobj
+*.opendb
+*.aps
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.cachefile
+*.VC.db
+*.psess
+*.vsp
+*.vspx
+*.sap
+*.e2e
+$tf/
+_TeamCity*
+.axoCover/*
+!.axoCover/settings.json
+TestResult.xml
+[Dd]ebug[Hh]istory/
+*.coveragexml
+_NCrunch_*
+.*crunch*.local.xml
+nCrunchTemp_*
+*.mm.*
+AutoTest.Net/
+
+# ============================================================
+# Secrets and credentials — never commit these
+# ============================================================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+service_account.json
+*_credentials.yaml
+*_secrets.yaml
+secrets/
+
+# ============================================================
+# Data files — local only
+# ============================================================
+data/raw/
+data/processed/
+data/external/
+*.csv
+*.parquet
+*.jsonl
+!data/.gitkeep
+!tests/fixtures/*.csv     # test fixtures are committed
+
+# ============================================================
+# Docker
+# ============================================================
+*.env
+docker-compose.override.yml
+
+# ============================================================
+# OS artifacts
+# ============================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ============================================================
+# IDE artifacts
+# ============================================================
+.idea/
+*.iml
+*.iws
+.vscode/settings.json     # user-specific; workspace extensions can be committed
+*.swp
+*.swo
+*~

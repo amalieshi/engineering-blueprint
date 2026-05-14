@@ -15,20 +15,36 @@ This framework prioritizes:
 
 ## Directory Structure
 
-*   `docs/`
-    *   Documentation regarding overarching system architectures, deployment strategies, and general professional development roadmaps.
-*   `standards/`
-    *   `python_guidelines.md`: Standards for typing, linting, and testing in Python.
-    *   `csharp_guidelines.md`: Architectural patterns, memory management, and .NET ecosystem best practices.
-    *   `yaml_best_practices.md`: Schema validation and configuration management rules.
-*   `templates/`
-    *   `communication/`: Standardized email drafts, meeting agendas, and technical proposal structures.
-    *   `project_init/`: Universal `.gitignore` files, `pyproject.toml` configurations, and standardized CI/CD pipeline templates.
-*   `meta/`
-    *   `CLAUDE.md`: System instructions and contextual rules for AI assistants interacting with this codebase.
+```
+engineering-blueprint/
+├── CLAUDE.md                              # AI assistant configuration (Claude Code)
+├── standards/
+│   ├── python_guidelines.md               # Type hints, ruff, mypy, pytest, structlog
+│   ├── csharp_guidelines.md               # .NET 8, nullable types, async/await, DI, xUnit
+│   ├── yaml_best_practices.md             # Schema validation, secrets, CI/CD rules
+│   └── git_workflow.md                    # Branching, Conventional Commits, PR process
+├── docs/
+│   ├── architecture/
+│   │   └── project_scaffolding.md         # Universal directory layout for Python, C#, dbt
+│   ├── decisions/
+│   │   └── adr_template.md                # Architecture Decision Record template
+│   └── onboarding/
+│       └── getting_started.md             # Quick-start guide for new projects
+└── templates/
+    ├── communication/
+    │   ├── email_templates.md             # Incident, escalation, status update, review request
+    │   └── meeting_agenda.md              # Design review, sprint planning, post-mortem, 1:1
+    └── project_init/
+        ├── pyproject.toml                 # Baseline: ruff, mypy (strict), pytest, coverage
+        ├── .gitignore                     # Python, C#, secrets, data files, OS artifacts
+        ├── .pre-commit-config.yaml        # ruff, mypy, yamllint, actionlint, commit-msg lint
+        └── Dockerfile                     # Multi-stage uv-based Python production image
+```
 
 ## Usage
-When initiating a new project or drafting technical communication, consult the relevant directory here first. Do not reinvent the wheel unless the terrain has fundamentally changed.
+When starting a new project, read [docs/onboarding/getting_started.md](docs/onboarding/getting_started.md) first. For AI-assisted development in this repo, Claude Code reads `CLAUDE.md` automatically.
+
+Do not reinvent the wheel unless the terrain has fundamentally changed.
 
 ## Maintenance
 This repository is a living document. As paradigms shift and new best practices emerge, these standards must be updated to reflect current technical realities. Stagnant documentation is worse than no documentation at all.
