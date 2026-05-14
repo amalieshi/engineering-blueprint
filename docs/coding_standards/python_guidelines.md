@@ -85,7 +85,7 @@ Run: `ruff check . && ruff format .`
 
 ## 4. Project Structure
 
-Follow the canonical layout defined in [docs/architecture/project_scaffolding.md](../docs/architecture/project_scaffolding.md).
+Follow the canonical layout defined in [docs/architecture/project_scaffolding.md](../architecture/project_scaffolding.md).
 
 Business logic lives in `src/<package_name>/`. Entry points (CLI, API handlers, pipeline tasks) are thin — they parse input, call domain functions, and handle output. No logic in `__main__.py` or route handlers beyond delegation.
 

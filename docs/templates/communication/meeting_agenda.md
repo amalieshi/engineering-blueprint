@@ -1,7 +1,5 @@
 # Meeting Agenda Templates
 
----
-
 ## 1. Architecture / Design Review
 
 **Meeting:** [System or Feature Name] — Architecture Review  
@@ -60,8 +58,6 @@ Come prepared with answers or thoughts on:
 
 **Next Steps:**
 -
-
----
 
 ## 2. Sprint Planning
 

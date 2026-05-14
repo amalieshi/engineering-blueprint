@@ -427,3 +427,15 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# Claude Code — local settings (machine-specific, not for version control)
+.claude/settings.local.json
+
+# Sphinx documentation build output
+_build/
+
+# Python virtual environments
+.venv/
+
+# Python bytecode
+*.egg-info/

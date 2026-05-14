@@ -1,8 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(find /c/projects/github/engineering-blueprint -not -path '*/.git/*' | sort)",
-      "Read(//c/projects/github/engineering-blueprint/**)"
-    ]
-  }
-}
