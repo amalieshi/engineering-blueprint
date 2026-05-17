@@ -2,6 +2,8 @@
 
 Core coding standards, project scaffolding, and operational templates for software development and data engineering.
 
+**Quick navigation:** [KNOWLEDGE_MAP.md](KNOWLEDGE_MAP.md) — task-oriented index across all resources.
+
 ---
 
 ## Overview
@@ -45,8 +47,14 @@ engineering-blueprint/
     ├── decisions/
     │   └── adr_template.md                      # Architecture Decision Record template
     └── templates/
+        ├── code/
+        │   ├── python_module_template.py        # Module header, structlog, error handling, entry point
+        │   ├── csharp_class_template.cs         # DI constructor, async method, structured logging
+        │   ├── python_test_template.py          # AAA pattern, fixtures, parametrize, integration stub
+        │   ├── csharp_test_template.cs          # xUnit + NSubstitute + FluentAssertions
+        │   └── code_review_checklist.md         # Architecture, types, errors, tests, security, ops
         ├── communication/
-        │   ├── email_templates.md               # Incident, escalation, status update, review request
+        │   ├── email_templates.md               # Incident, escalation, status update, review request, inquiry
         │   └── meeting_agenda.md                # Design review, sprint planning, post-mortem, 1:1
         ├── engineering_analysis/
         │   ├── fmea.md                          # Failure Mode and Effects Analysis
@@ -56,11 +64,13 @@ engineering-blueprint/
         │   ├── pyproject.toml                   # Baseline: ruff, mypy (strict), pytest, coverage
         │   ├── .gitignore                       # Python, C#, secrets, data files, OS artifacts
         │   ├── .pre-commit-config.yaml          # ruff, mypy, yamllint, actionlint, commit-msg lint
-        │   └── Dockerfile                       # Multi-stage uv-based Python production image
+        │   ├── Dockerfile                       # Multi-stage uv-based Python production image
+        │   └── README_template.md               # Standard project README structure
         ├── project_management/
         │   ├── scope_management.md              # Scope definition, validation, change control process
         │   ├── risk_management.md               # Risk register with scoring, mitigation, and owners
-        │   └── communication_plan.md            # Stakeholder matrix, delivery mechanisms, escalation path
+        │   ├── communication_plan.md            # Stakeholder matrix, delivery mechanisms, escalation path
+        │   └── status_report.md                 # Structured sprint/project status report
         └── software_tracking/
             ├── bug_report.md                    # Environment, reproduction steps, expected vs actual state
             ├── bug_resolution.md                # Root cause analysis, correction, automated verification
