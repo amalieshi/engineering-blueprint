@@ -52,6 +52,20 @@ docs/templates/code/code_review_checklist
 
 ```{toctree}
 :maxdepth: 2
+:caption: Project Initialisation Templates
+
+docs/templates/project_init/README_template
+```
+
+```{toctree}
+:maxdepth: 1
+:caption: Reference
+
+KNOWLEDGE_MAP
+```
+
+```{toctree}
+:maxdepth: 2
 :caption: Communication Templates
 
 docs/templates/communication/email_templates
