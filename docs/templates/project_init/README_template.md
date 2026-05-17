@@ -163,8 +163,8 @@ docker push <registry>/<project>:<version>
 
 | Resource | Link |
 |---|---|
-| Architecture Decision Records | [docs/decisions/](docs/decisions/) |
+| Architecture Decision Records | `docs/decisions/` |
 | Engineering Blueprint | [engineering-blueprint](https://github.com/amalieshi/engineering-blueprint) |
-| CI/CD Pipeline | [.github/workflows/](.github/workflows/) |
+| CI/CD Pipeline | `.github/workflows/` |
 | Monitoring Dashboard | [link] |
 | Runbook | [link] |
