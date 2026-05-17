@@ -45,11 +45,23 @@ docs/templates/software_tracking/feature_ideation
 
 ```{toctree}
 :maxdepth: 2
-:caption: Project Management Templates
+:caption: Code Templates
 
-docs/templates/project_management/scope_management
-docs/templates/project_management/risk_management
-docs/templates/project_management/communication_plan
+docs/templates/code/code_review_checklist
+```
+
+```{toctree}
+:maxdepth: 2
+:caption: Project Initialisation Templates
+
+docs/templates/project_init/README_template
+```
+
+```{toctree}
+:maxdepth: 1
+:caption: Reference
+
+KNOWLEDGE_MAP
 ```
 
 ```{toctree}
@@ -58,4 +70,14 @@ docs/templates/project_management/communication_plan
 
 docs/templates/communication/email_templates
 docs/templates/communication/meeting_agenda
+```
+
+```{toctree}
+:maxdepth: 2
+:caption: Project Management Templates
+
+docs/templates/project_management/scope_management
+docs/templates/project_management/risk_management
+docs/templates/project_management/communication_plan
+docs/templates/project_management/status_report
 ```

@@ -62,10 +62,10 @@ Before generating code or configuration, cross-reference the applicable standard
 
 | Domain | File |
 |---|---|
-| Python | [standards/python_guidelines.md](standards/python_guidelines.md) |
-| C# / .NET | [standards/csharp_guidelines.md](standards/csharp_guidelines.md) |
-| YAML / Config | [standards/yaml_best_practices.md](standards/yaml_best_practices.md) |
-| Git workflow | [standards/git_workflow.md](standards/git_workflow.md) |
+| Python | [docs/coding_standards/python_guidelines.md](docs/coding_standards/python_guidelines.md) |
+| C# / .NET | [docs/coding_standards/csharp_guidelines.md](docs/coding_standards/csharp_guidelines.md) |
+| YAML / Config | [docs/coding_standards/yaml_best_practices.md](docs/coding_standards/yaml_best_practices.md) |
+| Git workflow | [docs/coding_standards/git_workflow.md](docs/coding_standards/git_workflow.md) |
 | Project layout | [docs/architecture/project_scaffolding.md](docs/architecture/project_scaffolding.md) |
 
 ---

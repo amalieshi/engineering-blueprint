@@ -184,3 +184,33 @@ I would value your review of [the attached PR / design doc] before [date/decisio
 No need for a line-by-line review — high-level architectural comments are most useful at this stage.
 
 [Name]
+
+---
+
+## 7. Professional Inquiry / Collaboration Request
+
+**Subject:** [Research / Collaboration / Technical Question] — [Specific Topic] — [Your Name]
+
+---
+
+[Name],
+
+My name is [Your Name]. I am a [Your Role] at [Organization], working on [one-sentence context on your relevant background — a specific system, domain, or research area].
+
+**Reason for contact**  
+[One to two sentences. What specifically prompted you to reach out — their published work, a public talk, a shared domain problem, an open-source contribution. Be precise; generic outreach is easy to dismiss.]
+
+**Technical context**  
+[Three to four sentences. Describe the problem, system, or research question. State what you have already tried or explored so the recipient understands the starting point.]
+
+**What I am asking**  
+[State the specific ask: a 20-minute call, written feedback on a design approach, co-authorship discussion, access to a dataset, a pointer to an existing solution. Do not leave this implicit.]
+
+**Why this may be of mutual interest**  
+[One sentence. What value does this exchange create for the recipient, not just for you.]
+
+[Attach or link a relevant artifact if it substantiates the request — a design doc, repository, draft, or brief.]
+
+[Your Name]  
+[Title / Role]  
+[Contact / Profile URL]
